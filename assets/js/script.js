@@ -3,10 +3,10 @@ import { companyData } from './data.js'
 var options = {
   series: [{
     name: "Turnover",
-    data: [companyData[0].turnover, companyData[1].turnover, companyData[2].turnover, companyData[3].turnover, companyData[4].turnover, companyData[5].turnover, companyData[6].turnover, companyData[7].turnover, companyData[8].turnover, companyData[9].turnover]
+    data: [companyData[0].turnover, companyData[1].turnover, companyData[2].turnover, companyData[3].turnover, companyData[4].turnover, companyData[5].turnover, companyData[6].turnover, companyData[7].turnover, companyData[8].turnover, companyData[9].turnover, companyData[10].turnover, companyData[11].turnover, companyData[12].turnover, companyData[13].turnover, companyData[14].turnover]
   }, {
     name: "pre-tax proffit",
-    data: [companyData[0]["pre-tax proffit"], companyData[1]["pre-tax proffit"], companyData[2]["pre-tax proffit"], companyData[3]["pre-tax proffit"], companyData[4]["pre-tax proffit"], companyData[5]["pre-tax proffit"], companyData[6]["pre-tax proffit"], companyData[7]["pre-tax proffit"], companyData[8]["pre-tax proffit"], companyData[9]["pre-tax proffit"]]
+    data: [companyData[0]["pre-tax proffit"], companyData[1]["pre-tax proffit"], companyData[2]["pre-tax proffit"], companyData[3]["pre-tax proffit"], companyData[4]["pre-tax proffit"], companyData[5]["pre-tax proffit"], companyData[6]["pre-tax proffit"], companyData[7]["pre-tax proffit"], companyData[8]["pre-tax proffit"], companyData[9]["pre-tax proffit"], companyData[10]["pre-tax proffit"], companyData[11]["pre-tax proffit"], companyData[12]["pre-tax proffit"], companyData[13]["pre-tax proffit"], companyData[14]["pre-tax proffit"]]
   }],
   chart: {
     type: 'bar',
@@ -31,21 +31,37 @@ var options = {
   }],
   plotOptions: {
     bar: {
-      horizontal: false,
+      horizontal: true,
       borderRadius: 0,
       dataLabels: {
+        enabled: true,
         total: {
           enabled: false,
           style: {
+            colors: ["#000"],
             fontSize: '13px',
             fontWeight: 900
-          }
+          },
         }
       }
     },
   },
+  title: {
+    text: "Turnover & Profit for Top Businesses in North West England 2022",
+    align: 'center',
+    margin: 10,
+    offsetX: 0,
+    offsetY: 0,
+    floating: false,
+    style: {
+      fontSize:  '16px',
+      fontWeight:  'bold',
+      fontFamily:  undefined,
+      color:  '#EC7063'
+    },
+},
   xaxis: {
-    categories: [companyData[0].company, companyData[1].company, companyData[2].company, companyData[3].company, companyData[4].company, companyData[5].company, companyData[6].company, companyData[7].company, companyData[8].company, companyData[9].company
+    categories: [companyData[0].company, companyData[1].company, companyData[2].company, companyData[3].company, companyData[4].company, companyData[5].company, companyData[6].company, companyData[7].company, companyData[8].company, companyData[9].company, companyData[10].company, companyData[11].company, companyData[12].company, companyData[13].company, companyData[14].company
     ],
     tickAmount: undefined,
     tickPlacement: 'between',
@@ -112,14 +128,14 @@ var options = {
     },
    
     title: {
-        text: "COMPANY",
+        text: "£M",
         offsetX: 0,
-        offsetY: 80,
+        offsetY: 0,
         style: {
-            color: undefined,
+            color: '#EC7063',
             fontSize: '14px',
             fontFamily: 'Helvetica, Arial, sans-serif',
-            fontWeight: 600,
+            fontWeight: 500,
             cssClass: 'apexcharts-xaxis-title',
         },
     },
@@ -190,7 +206,7 @@ var options = {
       minWidth: 0,
       maxWidth: 160,
       style: {
-        colors: [],
+        colors: ["#000"],
         fontSize: '12px',
         fontFamily: 'Helvetica, Arial, sans-serif',
         fontWeight: 400,
@@ -216,15 +232,15 @@ var options = {
       offsetY: 0
     },
     title: {
-      text: "£M",
+      text: "COMPANY",
       rotate: -90,
-      offsetX: 0,
+      offsetX: 5,
       offsetY: 0,
       style: {
-        color: undefined,
+        color: "#EC7063",
         fontSize: '14px',
         fontFamily: 'Helvetica, Arial, sans-serif',
-        fontWeight: 600,
+        fontWeight: 500,
         cssClass: 'apexcharts-yaxis-title',
       },
     },
