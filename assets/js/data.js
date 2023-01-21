@@ -68,6 +68,41 @@ const companyData = [
         "turnover": 1862.7,
         "pre-tax proffit": 439.9,
         "year end": "Mar 22"
+    },
+    {
+        "company": "Radius Payment Solutions",
+        "location": "Crewe",
+        "turnover": 3389.1,
+        "pre-tax proffit": 126.8,
+        "year end": "Mar 22"
+    },
+    {
+        "company": "Lookers",
+        "location": "Altrincham",
+        "turnover": 4050.7,
+        "pre-tax proffit": 90.0,
+        "year end": "Dec 21"
+    },
+    {
+        "company": "Pets At Home",
+        "location": "Wilmslow",
+        "turnover": 1317.8,
+        "pre-tax proffit": 148.7,
+        "year end": "Mar 22"
+    },
+    {
+        "company": "Very",
+        "location": "Liverpool",
+        "turnover": 2317.1,
+        "pre-tax proffit": 81.7,
+        "year end": "Jun 21"
+    },
+    {
+        "company": "Brother International Europe",
+        "location": "Manchester",
+        "turnover": 792.9,
+        "pre-tax proffit": 136.4,
+        "year end": "Mar 21"
     }
 
 ];
@@ -76,5 +111,15 @@ const companyData = [
 // console.log(companyData[1].location);
 // console.log(companyData[1].turnover);
 // console.log(companyData[1]["pre-tax proffit"]);
+
+//calculate pre-taxt proffit as a percentage of turnover
+let preTaxProffit = companyData[0]["pre-tax proffit"]
+let turnover = companyData[0].turnover
+let c = profitPercentage(preTaxProffit, turnover)
+
+function profitPercentage(preTaxProffit, turnover) {
+    return (preTaxProffit / turnover * 100).toFixed(1) + "%";
+}
+console.log(c);
 
 export { companyData };
