@@ -22,6 +22,42 @@ const companyData = [
         "location": "Runcorn",
         "turnover": 3547.4,
         "pre-tax proffit": 466.8
+    },
+    {
+        "company": "Ausurus",
+        "location": "Warrington",
+        "turnover": 4695.0,
+        "pre-tax proffit": 251.0
+    },
+    {
+        "company": "Bentley Motors",
+        "location": "Crewe",
+        "turnover": 2392.8,
+        "pre-tax proffit": 560.7
+    },
+    {
+        "company": "TJ Morris",
+        "location": "Liverpool",
+        "turnover": 3338.0,
+        "pre-tax proffit": 396.7
+    },
+    {
+        "company": "Co-Operative",
+        "location": "Manchester",
+        "turnover": 11427.0,
+        "pre-tax proffit": 127.0
+    },
+    {
+        "company": "Marlowe",
+        "location": "Knutsford",
+        "turnover": 2737.8,
+        "pre-tax proffit": 167.1
+    },
+    {
+        "company": "United Utilities",
+        "location": "Warrington",
+        "turnover": 1862.7,
+        "pre-tax proffit": 439.9
     }
 
 ];
