@@ -1,3 +1,16 @@
 .chart {
-height: 75vh;
+height: 95vh;
+/* padding: 0 0 10% 0; */
 }
+
+.notes {
+    /* padding: 5% 0 0 0; */
+    font-size: 12px;
+    font-family: Helvetica, Arial, sans-serif;
+    color: grey;
+}
+
+.notes-container {
+    margin: 1% 5%;
+}
+
