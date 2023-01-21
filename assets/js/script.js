@@ -3,10 +3,10 @@ import { companyData } from './data.js'
 var options = {
   series: [{
     name: "Turnover",
-    data: [companyData[0].turnover, companyData[1].turnover, companyData[2].turnover, companyData[3].turnover]
+    data: [companyData[0].turnover, companyData[1].turnover, companyData[2].turnover, companyData[3].turnover, companyData[4].turnover, companyData[5].turnover, companyData[6].turnover, companyData[7].turnover, companyData[8].turnover, companyData[9].turnover]
   }, {
     name: "pre-tax proffit",
-    data: [companyData[0]["pre-tax proffit"], companyData[1]["pre-tax proffit"], companyData[2]["pre-tax proffit"], companyData[3]["pre-tax proffit"]]
+    data: [companyData[0]["pre-tax proffit"], companyData[1]["pre-tax proffit"], companyData[2]["pre-tax proffit"], companyData[3]["pre-tax proffit"], companyData[4]["pre-tax proffit"], companyData[5]["pre-tax proffit"], companyData[6]["pre-tax proffit"], companyData[7]["pre-tax proffit"], companyData[8]["pre-tax proffit"], companyData[9]["pre-tax proffit"]]
   }],
   chart: {
     type: 'bar',
@@ -45,7 +45,7 @@ var options = {
     },
   },
   xaxis: {
-    categories: [companyData[0].company, companyData[1].company, companyData[2].company, companyData[3].company
+    categories: [companyData[0].company, companyData[1].company, companyData[2].company, companyData[3].company, companyData[4].company, companyData[5].company, companyData[6].company, companyData[7].company, companyData[8].company, companyData[9].company
     ],
     tickAmount: undefined,
     tickPlacement: 'between',
